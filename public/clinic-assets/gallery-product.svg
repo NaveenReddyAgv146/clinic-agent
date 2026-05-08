@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 900">
+  <rect width="700" height="900" fill="#fbf7ef"/><circle cx="180" cy="200" r="180" fill="#c8d5c3" opacity=".42"/>
+  <rect x="255" y="210" width="190" height="430" rx="48" fill="#201a17"/><rect x="288" y="150" width="124" height="92" rx="28" fill="#b9924b"/>
+  <path d="M310 345h80M310 400h80M310 455h80" stroke="#fffdf8" stroke-width="14" stroke-linecap="round"/>
+</svg>
+*** Add File: public/clinic-assets/gallery-tools.svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 900">
+  <rect width="700" height="900" fill="#fffdf8"/><rect x="105" y="175" width="490" height="550" rx="70" fill="#f2ebe0"/>
+  <path d="M225 275h250M225 360h250M225 445h250" stroke="#b9924b" stroke-width="30" stroke-linecap="round"/>
+  <circle cx="350" cy="610" r="78" fill="#c8d5c3"/><path d="M305 610h90" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+</svg>

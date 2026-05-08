@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --color-cream: #fbf7ef;
+  --color-pearl: #fffdf8;
+  --color-champagne: #e5cf9b;
+  --color-gold: #b9924b;
+  --color-ink: #201a17;
+  --color-mist: #f2ebe0;
+  --color-sage: #7d8b78;
+  --shadow-luxury: 0 24px 70px rgba(86, 61, 37, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(229, 207, 155, 0.32), transparent 34rem),
+    linear-gradient(135deg, #fffdf8 0%, #fbf7ef 42%, #f4eadb 100%);
+  color: #201a17;
+  font-family: var(--font-sans);
+  min-width: 320px;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.glass {
+  background: rgba(255, 253, 248, 0.74);
+  border: 1px solid rgba(185, 146, 75, 0.18);
+  box-shadow: 0 24px 70px rgba(86, 61, 37, 0.12);
+  backdrop-filter: blur(22px);
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #b9924b 0%, #e5cf9b 48%, #8a6a32 100%);
+}
+
+.section-pad {
+  padding: 5rem 1rem;
+}
+
+.container-lux {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.field {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid rgba(185, 146, 75, 0.22);
+  background: rgba(255, 255, 255, 0.72);
+  padding: 0.85rem 1rem;
+  outline: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.field.field-icon {
+  padding-left: 3rem;
+}
+
+.field:focus {
+  border-color: #b9924b;
+  box-shadow: 0 0 0 4px rgba(185, 146, 75, 0.14);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #201a17, #6d552d);
+  color: white;
+  padding: 0.85rem 1.25rem;
+  font-weight: 700;
+  box-shadow: 0 16px 35px rgba(32, 26, 23, 0.18);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 45px rgba(32, 26, 23, 0.24);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(185, 146, 75, 0.25);
+  background: rgba(255, 255, 255, 0.62);
+  padding: 0.85rem 1.1rem;
+  font-weight: 700;
+  color: #201a17;
+}
