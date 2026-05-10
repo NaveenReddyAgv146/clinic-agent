@@ -2,6 +2,7 @@ const serviceImageMap = {
   'Hydrafacial Ritual': '/clinic-photos/service-hydra.jpg',
   'Laser Rejuvenation': '/clinic-photos/service-laser.jpg',
   'Clinical Peel Program': '/clinic-photos/service-peel.jpg',
+  'Acne Clarity Program': '/clinic-photos/service-laser.jpg',
 }
 
 const doctorImageMap = {

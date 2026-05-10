@@ -27,11 +27,24 @@ export default function Contact() {
               </motion.div>
             ))}
           </motion.div>
-          <motion.form variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid gap-4">
-            <input className="field" placeholder="Full name" />
-            <input className="field" placeholder="Email address" />
-            <textarea className="field min-h-32" placeholder="Tell us what you need" />
-            <motion.button whileTap={{ scale: 0.97 }} whileHover={{ y: -2 }} className="btn-primary" type="button">Send enquiry</motion.button>
+          <motion.form
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid gap-4"
+            action="https://formsubmit.co/growthmathsolutions@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Lumina Clinic Website Enquiry" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value={typeof window !== 'undefined' ? `${window.location.origin}/?enquiry=sent#contact` : 'http://localhost:5173/?enquiry=sent#contact'} />
+            <input className="field" name="name" placeholder="Full name" required />
+            <input className="field" name="email" type="email" placeholder="Email address" required />
+            <input className="field" name="phone" placeholder="Phone number" />
+            <textarea className="field min-h-32" name="message" placeholder="Tell us what you need" required />
+            <motion.button whileTap={{ scale: 0.97 }} whileHover={{ y: -2 }} className="btn-primary" type="submit">Send enquiry</motion.button>
           </motion.form>
         </motion.div>
       </div>
